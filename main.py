@@ -5,8 +5,7 @@ def drawText(img, text, width, height):
 
 	draw = ImageDraw.Draw(img)
 	font = ImageFont.truetype("font/arial.ttf", fontSize)
-	draw.text((len(text)+100, (height-fontSize)-30), text, (255, 255, 255), font=font)
-
+	draw.text((width/2, height-(fontSize-50)), text, (255, 255, 255), font=font, anchor="mm")
 
 
 def main():
